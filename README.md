@@ -1,19 +1,21 @@
 # Linux Notes
 
-AMD Drivers: [https://www.amd.com/es/support/kb/release-notes/rn-amdgpu-unified-linux-20-20](https://www.amd.com/es/support/kb/release-notes/rn-amdgpu-unified-linux-20-20)
+## Missing Wifi drivers in AMD
 
-Wifi Driver missing on HP Envy x360 Ryzen 7:
+First, try to install the AMD Drivers from here: [https://www.amd.com/es/support/kb/release-notes/rn-amdgpu-unified-linux-20-20](https://www.amd.com/es/support/kb/release-notes/rn-amdgpu-unified-linux-20-20). If it gives some error then try the following option.
 
-To install wifi driver clone this repo: [https://github.com/lwfinger/rtw89](https://github.com/lwfinger/rtw89) the run the following commands:
+I had the Wifi Driver missing issue on HP Envy x360 Ryzen 7. To install wifi driver clone this repo: [https://github.com/lwfinger/rtw89](https://github.com/lwfinger/rtw89) then run the following commands:
 ```
 cd rtw89
 make
 sudo make install
 sudo modprobe -v rtw_8852ae
 ```
-**Note:** If you get an error like operation not permitted the make sure the Secure Boot is disabled in the BIOS.
+**Note:** If you get an error like operation not permitted the make sure the **Secure Boot** is **disabled** in the BIOS.
 
----
+
+## Adding Refresh button to the right-click Context Menu in Linux Mint/Ubuntu/Debian
+
 To add refresh button to the Right-click context menu run the following commands:
 
 ```
