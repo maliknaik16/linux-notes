@@ -23,7 +23,7 @@ sudo apt-get install xdotool nautilus nautilus-refresh
 nautilus -q
 ```
 
-Create a file `nemo-refresh.desktop` with the following lines in `/usr/share/applications/` directory and then run `nautilus -q`: 
+Create a file `nemo-refresh.desktop` (https://github.com/kelebek333/nemo-actions/blob/master/usr/share/nemo/actions/nemo-refresh.nemo_action) with the following lines in `/usr/share/applications/` directory and then run `nautilus -q`: 
 
 ```
 [Nemo Action]
