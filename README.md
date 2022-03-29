@@ -19,6 +19,20 @@ To add refresh button to the Right-click context menu run the following commands
 ```
 sudo add-apt-repository ppa:nae-team/ppa
 sudo apt-get update
-sudo apt-get install nautilus nautilus-refresh
+sudo apt-get install xdotool nautilus nautilus-refresh
 nautilus -q
+```
+
+Create a file `nemo-refresh.desktop` with the following lines in `/usr/share/applications/` directory and then run `nautilus -q`: 
+
+```
+[Nemo Action]
+Name=Refresh
+Name[tr]=Tazele
+Comment=Nemo Refresh
+Exec=xdotool key ctrl+r
+Selection=None
+Extensions=any;
+Icon-Name=view-refresh
+Dependencies=xdotool;
 ```
