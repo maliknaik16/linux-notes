@@ -46,3 +46,6 @@ To disable caps-lock in Linux Mint or any other Linux distro run the following c
 ```
 setxkbmap -option caps:none
 ```
+
+or, Navigate to Layouts > Options in the Keyboard and then expand the Caps Lock behavior and then select **Caps Lock is disabled**.
+
