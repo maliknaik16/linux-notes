@@ -38,3 +38,11 @@ Extensions=any;
 Icon-Name=view-refresh
 Dependencies=xdotool;
 ```
+
+## Disable Caps lock
+
+To disable caps-lock in Linux Mint or any other Linux distro run the following command:
+
+```
+setxkbmap -option caps:none
+```
