@@ -13,6 +13,17 @@ sudo modprobe -v rtw_8852ae
 ```
 **Note:** If you get an error like operation not permitted the make sure the **Secure Boot** is **disabled** in the BIOS.
 
+## Slow internet
+
+If the internet is slow on the linux machine, then it's probably because the wifi power management is turned on.
+
+Change it to the following configuration to disable wifi power management at `/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf`:
+
+```
+[connection]
+wifi.powersave = 2
+```
+More information [here](https://askubuntu.com/questions/1230525/ubuntu-20-04-network-performance-extremely-slow).
 
 ## Adding Refresh button to the right-click Context Menu in Linux Mint/Ubuntu/Debian
 
